@@ -1,0 +1,6 @@
+34 error Error: Command failed: git add -- packages/local-api/package.json packages/local-api/package-lock.json packages/local-client/package.json packages/local-client/package-lock.json packages/cli/package.json packages/cli/package-lock.json lerna.json
+34 error fatal: Pathspec 'packages/local-client/package.json' is in submodule 'packages/local-client'
+34 error
+34 error     at makeError (C:\Users\alexa\Desktop\udemy\jbook\node_modules\execa\index.js:174:9)
+34 error     at C:\Users\alexa\Desktop\udemy\jbook\node_modules\execa\index.js:278:16
+34 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)

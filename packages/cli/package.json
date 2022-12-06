@@ -1,0 +1,29 @@
+{
+  "name": "notebook-javascript",
+  "version": "2.0.0",
+  "description": "",
+  "bin": "dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsc --watch --preserveWatchOutput",
+    "prepublishOnly": "esbuild src/index.ts --platform=node --outfile=dist/index.js --bundle --minify --define:process.env.NODE_ENV=\\\"production\\\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@notebook-javascript/local-api": "^2.0.0",
+    "commander": "^9.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.10",
+    "esbuild": "0.8.26",
+    "typescript": "^4.9.3"
+  },
+  "gitHead": "27d8b87bbf6ec72a353260d842ae9474afcbfe9a"
+}

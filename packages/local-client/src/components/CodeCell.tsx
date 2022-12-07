@@ -38,7 +38,7 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) => {
     const timer: NodeJS.Timeout = setTimeout(async () => {
       createBundle({ cellId: cell.id, input: cumulativeCode })
     }, 1000)
-    // clean-up function acts as deboucing to avoid bundle too many times when the user write the code.
+    // clean-up function acts as deboucing to avoid bundle too many times when the user write the code
     return () => {
       clearTimeout(timer)
     }

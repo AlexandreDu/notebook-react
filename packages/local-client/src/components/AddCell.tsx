@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useActions } from '../hooks/useActions';
-import AddCellButton from './AddCellButton';
-import {Button, Size, BgColor, Pill} from './Button';
-import Icon from './Icon';
+import AddCellButton from '../components/AddCellButton';
+import {Button, Size, BgColor, Pill} from '../components/Button';
+import Icon from '../components/Icon';
 
 
 interface AddCellProps {

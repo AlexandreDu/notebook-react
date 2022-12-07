@@ -1,10 +1,11 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useRef, useCallback } from 'react';
 
 import { useActions } from '../hooks/useActions';
-import { actionCreators } from '../state';
 
+import ActionBar from './ActionBar';
 import MDEditor from "@uiw/react-md-editor";
-import { Cell } from '../state';
+import { Cell } from '../state/cell';
+
 
 
 interface textEditorProps {
@@ -38,10 +39,9 @@ const TextEditor: React.FC<textEditorProps> = ({cell}) => {
   }, [])
 
 
-
-
   return (
-    <div className='border-2 p-4'>
+    <div className='border-2 p-4 relative'>
+      <ActionBar id={cell.id} />
       {editing ? (
         <div className='editor' ref={setRef}>
           <MDEditor value={cell.content} onChange={ (v) => updateCell({id: cell.id, content: v || ''}) } />

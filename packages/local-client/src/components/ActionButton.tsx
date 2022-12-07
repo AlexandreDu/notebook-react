@@ -1,5 +1,5 @@
-import Icon, { IconProps } from './Icon';
-import {Button, BgColor, Size, Pill, Hover} from './Button';
+import Icon, { IconProps } from './Icon'
+import {Button, BgColor, Size, Hover} from './Button'
 
 interface ActionButtonProps extends IconProps {
   onClick: () => void

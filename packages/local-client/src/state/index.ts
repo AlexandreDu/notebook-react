@@ -1,4 +1,4 @@
-export * from "../state/actions";
+export * from "./actions";
 export * from "./store";
 export * from "./reducers";
 export * from "./cell";

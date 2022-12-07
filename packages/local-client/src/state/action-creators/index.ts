@@ -12,7 +12,7 @@ import {
 } from "../actions";
 import { v4 as uuidv4 } from "uuid";
 import bundle from "../../bundler";
-import { RootState } from "../reducers/index";
+import { RootState } from "../reducers";
 
 interface UpdateCellArgs {
   id: string;

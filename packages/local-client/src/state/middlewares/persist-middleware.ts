@@ -2,7 +2,7 @@ import { Dispatch } from "redux";
 import { Action } from "../actions";
 import { ActionTypes } from "../action-types";
 import { saveCells } from "../action-creators";
-import { RootState } from "../reducers/index";
+import { RootState } from "../reducers";
 // this middleware stands for intercepting action types that modifies cell. When it's the case, we call the saveCells action creators
 export const persistMiddleware = ({
   dispatch,

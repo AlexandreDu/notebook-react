@@ -7,13 +7,14 @@ import { useIsFirstCodeCell } from '../hooks/useIsFirstCodeCell';
 import { useTypedSelector } from '../hooks/useTypedSelector';
 import { useActions } from '../hooks/useActions';
 
-import { Cell } from '../state';
-
-import { Snackbar, Severity } from './Snackbar';
-import CodeEditor  from './CodeEditor';
-import Preview from './Preview';
-
 import { useCumulativeCode } from '../hooks/useCumulativeCode';
+
+import { Cell } from '../state/cell';
+
+import ActionBar from './ActionBar';
+import { Snackbar, Severity } from './Snackbar';
+import CodeEditor from './CodeEditor';
+import Preview from './Preview';
 
 
 export interface CodeCellProps {
@@ -45,12 +46,15 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) => {
   }, [cumulativeCode, cell.id, createBundle])
 
   return (
-    <>
-    {isFirstCodeCell && 
-      <Snackbar 
-        content={'use show() to render JSX'} 
-        severity={Severity.INFO}
-      />}
+    <div>
+      {isFirstCodeCell && (
+        <Snackbar 
+          content={'use show() to render JSX'} 
+          severity={Severity.INFO}
+        />
+      )}
+      <div className='relative'>
+      <ActionBar id={cell.id} />
       <ResizableComponent>
         <div className='flex flex-wrap flex-row h-[calc(100%-10px)]'>
           <CodeEditor 
@@ -72,8 +76,9 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) => {
           )}
           
         </div>
-      </ResizableComponent>
-    </>
+      </ResizableComponent>    
+      </div>
+    </div>
   )
 }
 

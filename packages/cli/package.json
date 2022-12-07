@@ -1,6 +1,6 @@
 {
-  "name": "notebook-javascript",
-  "version": "2.0.0",
+  "name": "notebook-react",
+  "version": "1.0.0",
   "description": "",
   "bin": "dist/index.js",
   "publishConfig": {
@@ -17,7 +17,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@notebook-javascript/local-api": "^2.0.0",
+    "@notebook-react/local-api": "^1.0.0",
     "commander": "^9.4.1"
   },
   "devDependencies": {

@@ -23,7 +23,7 @@ export const serve = (
     // for serving in prod
   } else {
     const packagePath = require.resolve(
-      "@notebook-javascript/local-client/build/index.html"
+      "@notebook-react/local-client/build/index.html"
     );
 
     app.use(express.static(path.dirname(packagePath)));

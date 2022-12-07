@@ -1,5 +1,4 @@
 import { useTypedSelector } from "./useTypedSelector";
-
 // hooks to determine if the cell is the first code cell
 export const useIsFirstCodeCell = (id: string) => {
   return useTypedSelector(({ cells: { data, order } }) => {

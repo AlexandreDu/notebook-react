@@ -1,5 +1,4 @@
-import { Button, BgColor, Size, Pill } from './Button';
-
+import { Button, BgColor, Size, Pill } from './Button'
 interface AddCellButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {}
 const AddCellButton: React.FC<AddCellButtonProps> = ({ children, onClick }) => {
 

@@ -1,6 +1,6 @@
 
 #	To execute the package published on NPM:  
-npx notebook-javascript serve\
+npx notebook-react serve\
 and follow the instructions.
 
 https://www.npmjs.com/package/notebook-react

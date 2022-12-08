@@ -9,6 +9,9 @@ https://www.npmjs.com/package/notebook-react
 In the root's project: npm run start \
 It runs lerna run start --parallel to run npm start of the 3 packages of this mono repository.
 
+#	About this project
+This is an interactive browser-based coding environment which is started with a CLI.
+I have realized this project following the udemy's course (with personal added features) of Stephen Grider "React and Typescript: Build a Portfolio Project" in order to strengthen my knowledges in react + typescript
 
 #	Project structure
 Mono repository with 3 packages managed by lerna, and built with ESBuild:
@@ -44,6 +47,5 @@ Components hierarchy structure:
 
 		
 	
-#	About this project
-I have realized this project following the udemy's course of Stephen Grider "React and Typescript: Build a Portfolio Project" in order to strengthen my knowledges in react + typescript.
+
 

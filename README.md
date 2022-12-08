@@ -10,7 +10,7 @@ In the root's project: npm run start \
 It runs lerna run start --parallel to run npm start of the 3 packages of this mono repository.
 
 #	About this project
-This is an interactive browser-based coding environment which is started with a CLI, realized during the udemy's course (with personal added features) of Stephen Grider "React and Typescript: Build a Portfolio Project" in order to strengthen my knowledges in react + typescript
+This is an interactive browser-based javascript/React coding environment which is started with a CLI, realized during the udemy's course (with personal added features) of Stephen Grider "React and Typescript: Build a Portfolio Project" in order to strengthen my knowledges in react + typescript
 
 #	Project structure
 Mono repository with 3 packages managed by lerna, and built with ESBuild:
